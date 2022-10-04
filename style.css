@@ -11,6 +11,12 @@
     font-family: 'Signika', sans-serif;
 }
 
+html,
+body{
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
 .hero {
     min-height: 100vh;
     width: 100%;
