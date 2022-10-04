@@ -7,10 +7,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza</title>
     <link rel="stylesheet" href="style.css">
+    <!--Icon link-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--Scroll revel js-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-    <div class="hero"></div>
+    <section class="hero" id="home">
+        <nav>
+            <div class="logo">
+                <h1>PZ</h1>
+            </div>
+            <div class="list" id="menu">
+                <ul id="ul">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu1">Menu</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+                <a href="#" class="contact" id="ct">Contact</a>
+
+            </div>
+            <div class="mobile_bars">
+                <i class="uil uil-list-ui-alt" id="open"></i>
+                <i class="uil uil-times-square" id="close"></i>
+            </div>
+        </nav>
+
+        <div class="hero_content">
+            <div class="text">
+                <h1>PIZZA <br>PARADISE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repudiandae distinctio aliquid adipisci ea voluptate quod corporis doloremque. Laudantium ipsum ipsam ratione rem, iste temporibus voluptatum sit aperiam. Consectetur, autem.</p>
+                <div class="btn"><i class="uil uil-angle-right"></i>
+                    <p>Explore</p>
+                </div>
+            </div>
+            <div class="img"></div>
+        </div>
+    </section>
+    <section class="menu" id="menu1">
+        <h1 class="h1">OUR MENU</h1>
+        <div class="menu_list">
+            <h2>Roasted chicken</h2>
+            <div class="menu_icons">
+                <i class="uil uil-crockery"></i>
+                <i class="uil uil-glass-martini"></i>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit. magnam quis dolores odit.</p>
+            <i class="uil uil-shopping-cart-alt shop"></i>
+        </div>
+        <div class="menu_list">
+            <h2>Fries</h2>
+            <div class="menu_icons">
+                <i class="uil uil-crockery"></i>
+                <i class="uil uil-glass-martini"></i>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit. magnam quis dolores odit.</p>
+            <i class="uil uil-shopping-cart-alt shop"></i>
+        </div>
+        <div class="menu_list">
+            <h2>Burger</h2>
+            <div class="menu_icons">
+                <i class="uil uil-crockery"></i>
+                <i class="uil uil-glass-martini"></i>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit. magnam quis dolores odit.</p>
+            <i class="uil uil-shopping-cart-alt shop"></i>
+        </div>
+        <div class="menu_list">
+            <h2>Noodles</h2>
+            <div class="menu_icons">
+                <i class="uil uil-crockery"></i>
+                <i class="uil uil-glass-martini"></i>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit. magnam quis dolores odit.</p>
+            <i class="uil uil-shopping-cart-alt shop"></i>
+        </div>
+    </section>
+
+
+    <section class="categories" id="categories">
+        <h1 class="h1">CATEGORIES</h1>
+        <div class="cat_cards">
+            <div class="cards card1">
+                <h2>Roasted Chicken</h2>
+            </div>
+            <div class="cards card2">
+                <h2>Fries</h2>
+            </div>
+            <div class="cards card3">
+                <h2>Burger</h2>
+            </div>
+            <div class="cards card4">
+                <h2>Noodles</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products" id="products">
+        <h1 class="h1">PRODUCTS</h1>
+        <div class="product_cards">
+            <div class="pro_card">
+                <div class="pro_img"></div>
+                <h2>Fries</h2>
+                <p>$20</p>
+                <i class="uil uil-shopping-cart-alt pro_shop"></i>
+            </div>
+            <div class="pro_card">
+                <div class="pro_img"></div>
+                <h2>Chicken</h2>
+                <p>$20</p>
+                <i class="uil uil-shopping-cart-alt pro_shop"></i>
+            </div>
+            <div class="pro_card">
+                <div class="pro_img"></div>
+                <h2>Burger</h2>
+                <p>$20</p>
+                <i class="uil uil-shopping-cart-alt pro_shop"></i>
+            </div>
+            <div class="pro_card">
+                <div class="pro_img"></div>
+                <h2>Noodles</h2>
+                <p>$20</p>
+                <i class="uil uil-shopping-cart-alt pro_shop"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="abt_content">
+            <div class="img"></div>
+            <div class="text">
+                <h1 class="h1">ABOUT US</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repudiandae distinctio aliquid adipisci ea voluptate quod corporis doloremque. Laudantium ipsum ipsam ratione rem, iste temporibus voluptatum sit aperiam. Consectetur, autem.</p>
+                <div class="btn"><i class="uil uil-angle-right"></i>
+                    <p>Explore</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="take_out">
+            <h1>TAKE-<span>OUT</span> SERVICE</h1>
+            <h2>Available daily * 9am-4pm</h2>
+        </div>
+        <div class="newslatter">
+            <h1>Subscribe to our newslatter</h1>
+            <div class="input">
+                <input type="text" placeholder="email">
+                <i class="uil uil-angle-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="nav_f">
+            <div class="logo_f">
+                <h1>PZ</h1>
+            </div>
+            <div class="list_f">
+                <ul class="ul">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu1">Menu</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+                <a href="#" class="contact_f">Contact</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 300
+        });
+
+        ScrollReveal().reveal('.list', {
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.logo', {
+            origin: 'left'
+        });
+
+        ScrollReveal().reveal('.text', {
+            origin: 'left',
+
+        });
+        ScrollReveal().reveal('.h1', {
+            origin: 'left',
+        });
+        ScrollReveal().reveal('.menu_list', {
+            origin: 'left',
+            interval: 100
+        });
+        ScrollReveal().reveal('.cards', {
+            origin: 'left',
+            interval: 100
+        });
+        ScrollReveal().reveal('.pro_card', {
+            origin: 'left',
+            interval: 100
+        });
+        ScrollReveal().reveal('.take_out', {
+            origin: 'left',
+        });
+        ScrollReveal().reveal('.newslatter', {
+            origin: 'right',
+        });
+    </script>
 </body>
 
 </html>
