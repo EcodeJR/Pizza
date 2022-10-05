@@ -1,2 +1,2 @@
 # Pizza
-Pizza delivery site
+Pizza is a fictional landing page.
