@@ -12,7 +12,7 @@
 }
 
 html,
-body{
+body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -29,8 +29,10 @@ nav {
     width: 100%;
     padding: 7px 10px;
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: space-around;
+    z-index: 900;
 }
 
 .logo h1 {
@@ -44,7 +46,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: 99;
+    z-index: 1000;
 }
 
 ul {
@@ -92,10 +94,10 @@ ul li a {
         width: 0px;
         height: 0px;
         flex-direction: column;
-        position: absolute;
         justify-content: center;
         top: 10px;
         right: 10px;
+        position: fixed;
         background-color: #fff;
     }
     .list ul {
@@ -148,6 +150,7 @@ ul li a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-top: 10vh;
 }
 
 .text h1 {
@@ -188,9 +191,64 @@ ul li a {
     padding: 5px 8px;
 }
 
-.img {
+.hero_content .img {
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10vh;
+}
+
+.img .pizza {
+    height: 40vh;
+    width: 50vw;
+    object-fit: contain;
+}
+
+.img .pepper,
+.img .pepper1,
+.img .onion,
+.img .onions {
+    height: 100px;
+    animation: 2s moving infinite;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.img .pepper {
+    position: absolute;
+    top: -5%;
+    left: 20%;
+}
+
+.img .pepper1 {
+    position: absolute;
+    top: -5%;
+    left: 60%;
+}
+
+.img .onion {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+}
+
+.img .onions {
+    position: absolute;
+    top: 20%;
+    left: 75%;
 }
 
 @media only screen and (max-width:768px) {
@@ -200,13 +258,46 @@ ul li a {
     .text {
         width: 100%;
         min-height: 70vh;
+        padding-top: 0;
     }
     .text h1 {
         font-size: 50px;
     }
-    .img {
+    .hero_content .img {
         width: 100%;
-        height: 50vh;
+        height: 30vh;
+        padding-top: 0;
+    }
+    .img .pizza {
+        height: 70vh;
+        width: 90vw;
+        object-fit: contain;
+    }
+    .img .pepper,
+    .img .pepper1,
+    .img .onion,
+    .img .onions {
+        height: 70px;
+    }
+    .img .pepper {
+        position: absolute;
+        top: 0;
+        left: 20%;
+    }
+    .img .pepper1 {
+        position: absolute;
+        top: 0;
+        left: 60%;
+    }
+    .img .onion {
+        position: absolute;
+        top: 35%;
+        left: 1%;
+    }
+    .img .onions {
+        position: absolute;
+        top: 35%;
+        left: 70%;
     }
 }
 
@@ -309,6 +400,10 @@ ul li a {
     grid-gap: 10px;
 }
 
+.cards h2 {
+    font-size: 30px;
+}
+
 .card1,
 .card2,
 .card3,
@@ -316,11 +411,34 @@ ul li a {
     height: 30vh;
     width: 30vw;
     border: 5px solid rgba(248, 139, 43, .4);
-    background-color: #fff;
-    color: var(--main-color);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card1 {
+    background: url("/images/roasted_chicken_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card2 {
+    background: url("/images/fries_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card3 {
+    background: url("/images/burger_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card4 {
+    background: url("/images/noodles_bg.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 @media only screen and (max-width:768px) {
@@ -381,6 +499,30 @@ ul li a {
     background-color: var(--secondary);
 }
 
+.pro_1 {
+    background: url("/images/fries_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.pro_2 {
+    background: url("/images/roasted_chicken_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.pro_3 {
+    background: url("/images/burger_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.pro_4 {
+    background: url("/images/noodles_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 .pro_shop {
     position: absolute;
     bottom: 0;
@@ -424,12 +566,13 @@ ul li a {
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 20px;
+    padding: 5px;
 }
 
-.abt_content img {
+.abt_content .img {
     width: 50%;
     height: 100%;
+    position: relative;
 }
 
 .abt_content text {
@@ -437,12 +580,16 @@ ul li a {
     height: 100%;
 }
 
+.burger {
+    animation: 2s moving infinite;
+}
+
 @media only screen and (max-width:768px) {
     .abt_content {
         flex-direction: column;
     }
-    .abt_content img {
-        height: 50vh;
+    .abt_content .img {
+        height: 30vh;
         width: 100%;
     }
     .abt_content text {

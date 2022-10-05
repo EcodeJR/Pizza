@@ -15,8 +15,8 @@
 
 <body>
     <section class="hero" id="home">
-        <nav>
-            <div class="logo">
+        <nav id="nav">
+            <div class="logo" id="logo">
                 <h1>PZ</h1>
             </div>
             <div class="list" id="menu">
@@ -45,7 +45,13 @@
                     <p>Explore</p>
                 </div>
             </div>
-            <div class="img"></div>
+            <div class="img h_img">
+                <img class="pizza" src="/images/Pizza2.png" alt="Pizza">
+                <img class="pepper" src="/images/pepper.png" alt="chilli pepper">
+                <img class="pepper1" src="/images/pepper1.png" alt="chilli pepper">
+                <img class="onion" src="/images/onion.png" alt="onion">
+                <img class="onions" src="/images/onions.png" alt="onions">
+            </div>
         </div>
     </section>
     <section class="menu" id="menu1">
@@ -112,27 +118,27 @@
         <h1 class="h1">PRODUCTS</h1>
         <div class="product_cards">
             <div class="pro_card">
-                <div class="pro_img"></div>
+                <div class="pro_img pro_1"></div>
                 <h2>Fries</h2>
                 <p>$20</p>
                 <i class="uil uil-shopping-cart-alt pro_shop"></i>
             </div>
             <div class="pro_card">
-                <div class="pro_img"></div>
+                <div class="pro_img pro_2"></div>
                 <h2>Chicken</h2>
-                <p>$20</p>
+                <p>$50</p>
                 <i class="uil uil-shopping-cart-alt pro_shop"></i>
             </div>
             <div class="pro_card">
-                <div class="pro_img"></div>
+                <div class="pro_img pro_3"></div>
                 <h2>Burger</h2>
-                <p>$20</p>
+                <p>$30</p>
                 <i class="uil uil-shopping-cart-alt pro_shop"></i>
             </div>
             <div class="pro_card">
-                <div class="pro_img"></div>
+                <div class="pro_img pro_4"></div>
                 <h2>Noodles</h2>
-                <p>$20</p>
+                <p>$40</p>
                 <i class="uil uil-shopping-cart-alt pro_shop"></i>
             </div>
 
@@ -141,8 +147,10 @@
 
     <section class="about" id="about">
         <div class="abt_content">
-            <div class="img"></div>
-            <div class="text">
+            <div class="img a_img">
+                <img class="pizza burger" src="/images/buger.png" alt="buger">
+            </div>
+            <div class="text a_text">
                 <h1 class="h1">ABOUT US</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repudiandae distinctio aliquid adipisci ea voluptate quod corporis doloremque. Laudantium ipsum ipsam ratione rem, iste temporibus voluptatum sit aperiam. Consectetur, autem.</p>
                 <div class="btn"><i class="uil uil-angle-right"></i>
@@ -201,15 +209,12 @@
             delay: 300
         });
 
-        ScrollReveal().reveal('.list', {
-            origin: 'left'
-        });
-        ScrollReveal().reveal('.logo', {
-            origin: 'left'
-        });
-
         ScrollReveal().reveal('.text', {
             origin: 'left',
+
+        });
+        ScrollReveal().reveal('.a_text', {
+            origin: 'right',
 
         });
         ScrollReveal().reveal('.h1', {
@@ -232,6 +237,12 @@
         });
         ScrollReveal().reveal('.newslatter', {
             origin: 'right',
+        });
+        ScrollReveal().reveal('.h_img', {
+            origin: 'right',
+        });
+        ScrollReveal().reveal('.a_img', {
+            origin: 'left',
         });
     </script>
 </body>
